@@ -1,1 +1,107 @@
-/* Add CSS styling here */
+.Header {
+    display: flex;
+    flex-direction: column;
+    height: 115px;
+    width: 50%;
+    background-color: lightgrey;
+    border: 2px solid black;
+}
+.Top-Section {
+    display: flex;
+    height: 375px;
+    width: 50%;
+    background-color: white;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.Content {
+    display: flex;
+    flex-flow: row wrap;
+    height: 500px;
+    width: 50%;
+    background-color: white;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.Content .boxes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+.Content .boxes .box {
+    width: 150px;
+    height: 150px;
+    background: black;
+    margin: 20px 2.5%;
+    border: 2px solid black;
+    color: red;
+}
+Footer {
+    display: flex;
+    flex-direction: column;
+    height: 175px;
+    width: 50%;
+    background-color: lightgrey;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+.nav {
+    display: flex;
+}
+a {
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 2px 15px;
+    background-color: white;
+    color: black;
+}
+.home {
+    margin-left: 1.5%;
+}
+h1{
+    margin-left: 1%;
+}
+.footer-link {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 25px 5px 25px;
+    margin: 0px 15px;
+}
+h2 {
+    padding: 15px 0px 10px -15px;
+}
+.img-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 145px;
+}
+.big-box {
+    width: 440px;
+    height: 340px;
+    background: black;
+    margin: 20px 2.5%;
+    justify-content: center;
+    align-content: center;
+}
+.img-container {
+    width: 50%;
+}
+.text-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+}
+.projects-link {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 25px 5px 25px;
+}
