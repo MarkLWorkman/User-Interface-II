@@ -1,23 +1,28 @@
+.container {
+    height: 1080px;
+    width: 1920px;
+}
 .Header {
     display: flex;
     flex-direction: column;
-    height: 115px;
+    height: 10%;
     width: 50%;
     background-color: lightgrey;
     border: 2px solid black;
 }
 .Top-Section {
     display: flex;
-    height: 375px;
+    height: 30%;
     width: 50%;
     background-color: white;
     border-left: 2px solid black;
     border-right: 2px solid black;
+    margin-bottom: 1%;
 }
 .Content {
     display: flex;
     flex-flow: row wrap;
-    height: 500px;
+    height: 40%;
     width: 50%;
     background-color: white;
     border-left: 2px solid black;
@@ -40,7 +45,7 @@
 Footer {
     display: flex;
     flex-direction: column;
-    height: 175px;
+    height: 15%;
     width: 50%;
     background-color: lightgrey;
     justify-content: center;
@@ -54,6 +59,7 @@ a {
     text-decoration: none;
     border: 1px solid black;
     padding: 2px 15px;
+    margin-bottom: 1%;
     background-color: white;
     color: black;
 }
@@ -78,14 +84,15 @@ h2 {
 .img-text {
     text-align: center;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color: black;
 }
 .big-box {
-    width: 440px;
-    height: 340px;
+    width: 100%;
+    height: 100%;
     background: black;
-    margin: 20px 2.5%;
+    margin: 2%;
     justify-content: center;
     align-content: center;
 }
@@ -105,4 +112,150 @@ h2 {
     color: black;
     border: 1px solid black;
     padding: 5px 25px 5px 25px;
+}
+@media only screen and (max-width: 800px) {
+    .Header {
+        width: 40%;
+        height: 20%;
+        background-color: white;
+        border: none;
+    }
+    h1 {
+        text-align: center;
+    }
+    .nav {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .home {
+        margin-left: 0%;
+    }
+    .Top-Section {
+        width: 40%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+    .img-container {
+        width: 60%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-left: 2%;
+    }
+    .text-container {
+        width: 40%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    .Content {
+        width: 40%;
+        height: 60%;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 10%;
+        border: none;
+        padding-left: 10%;
+    }
+    footer {
+        width: 40%;
+        height: 20%;
+        border: none;
+    }
+    .box {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .boxes {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .Header {
+        width: 25%;
+        height: 20%;
+        background-color: white;
+        border: none;
+    }
+    h1 {
+        text-align: center;
+    }
+    .nav {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .home {
+        margin-left: 0%;
+    }
+    .Top-Section {
+        width: 25%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+    .img-container {
+        width: 60%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-left: 2%;
+    }
+    .text-container {
+        width: 25%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5%;
+        margin-top: 2%;
+        margin-left: -2%;
+    }
+    .Content {
+        width: 40%;
+        height: 60%;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        margin-top: 15%;
+        border: none;
+        margin-left: -7%;
+
+    }
+    footer {
+        width: 25%;
+        height: 20%;
+        border: none;
+    }
+    .box {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .boxes {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 }
